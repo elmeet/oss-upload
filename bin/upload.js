@@ -57,7 +57,10 @@ async function upload(from, to, clear, config) {
   each(files, async file => {
     const path = pathUtil.join(from, file);
     p(`upload: ${file}`);
-    const dist = pathUtil.join(to, file).replace(/^[/\\]/, '');
+    let dist = pathUtil.join(to, file).replace(/^[/\\]/, '');
+    if(process.platform  === 'win32'){
+      dist = dist.replace(/\\/g,'/')
+    }
     const res = await store.put(dist, fs.createReadStream(path));
     p(`ok: ${res.url}`);
   });
