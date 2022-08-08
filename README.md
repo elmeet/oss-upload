@@ -6,13 +6,13 @@
 ### 1. Install package
 
 ```shell
-npm install --save ali-oss-upload-cli
+npm install --save @elmeet/ali-oss-upload-cli
 ```
 
 or
 
 ```shell
-yarn add --dev ali-oss-upload-cli
+yarn add --dev @elmeet/ali-oss-upload-cli
 ```
 
 ### 2. Add an config file `oss.secret.json` under your project's directory.
@@ -44,27 +44,27 @@ module.exports = {
 
 ```shell
 # upload dist dir to remote `/collab-static`
-oss-upload dist -o /collab-static -c config/oss.secret.json
+elmeet-oss-upload dist -o /collab-static -c config/oss.secret.json
 
 # upload to bucket root dir
-oss-upload priv/static -o / -c config/oss.secret.json
+elmeet-oss-upload priv/static -o / -c config/oss.secret.json
 
 # config can be a node module
-oss-uplaod priv/static -o / -c config/oss.config.js
+elmeet-oss-upload priv/static -o / -c config/oss.config.js
 
 # omit `-c` if config file is in the default location: $project/oss.config.js
-oss-upload dist -o '/'
+elmeet-oss-upload dist -o '/'
 
 # clear remote directory before uploading
-oss-upload dist -o '/' -C
+elmeet-oss-upload dist -o '/' -C
 ```
 
 ### 4. show help
 
 ```shell
-oss-upload -h
+elmeet-oss-upload -h
 
-Usage: oss-upload [options] <dir>
+Usage: elmeet-oss-upload [options] <dir>
 
   Options:
 

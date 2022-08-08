@@ -1,10 +1,10 @@
 {
-  "name": "ali-oss-upload-cli",
-  "version": "1.4.1",
+  "name": "@elmeet/ali-oss-upload-cli",
+  "version": "1.4.2",
   "description": "upload local static files to ali oss",
   "main": "index.js",
   "bin": {
-    "oss-upload": "bin/upload.js"
+    "elmeet-oss-upload": "bin/upload.js"
   },
   "scripts": {
     "lint": "eslint bin"
@@ -22,12 +22,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bencode/oss-upload.git"
+    "url": "git+https://github.com/elmeet/oss-upload.git"
   },
-  "author": "bencode@163.com",
+  "author": "elmeet@qq.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bencode/oss-upload/issues"
+    "url": "https://github.com/elmeet/oss-upload/issues"
   },
-  "homepage": "https://github.com/bencode/oss-upload#readme"
+  "homepage": "https://github.com/elmeet/oss-upload#readme"
 }
